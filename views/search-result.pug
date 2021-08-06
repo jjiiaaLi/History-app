@@ -1,0 +1,21 @@
+extends layout.pug
+
+append head
+  script(src="/javascripts/index.js" type="module" defer)
+
+
+block content
+  if questions
+    each question in questions
+      fieldset(class='containAll searchResult')
+        a(href=`/answers/${question.id}`)
+            p= question.content
+    div(class='searchResultsDiv')
+      form(method='get' action='/')
+        button(type='submit') Return to Home
+  else
+    fieldset(class='containAll searchResult')
+      p No results found!
+    div(class='searchResultsDiv')
+      form(method='get' action='/')
+        button(type='submit') Return to Home

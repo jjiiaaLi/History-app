@@ -1,0 +1,600 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../images/constitution-signing.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: fantasy;
+  min-width: 500px;
+  /* padding-bottom: 200px; */
+}
+
+.headerOne {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: burlywood;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+.searchBar {
+  display: flex;
+  justify-content: center;
+  border-radius: 25px;
+  position: absolute;
+  margin-left: 80%;
+  margin-top: 13%;
+  width: 40%;
+  height: auto;
+}
+
+.--clicked {
+  background-color: rgba(136, 131, 131, 0.5);
+}
+
+.searchContainer {
+  width: 300px;
+  display: flex;
+  justify-content: left;
+  border-radius: 25px;
+  margin-top: 10px;
+  margin-left: 10px;
+
+  margin-right: 20%;
+}
+
+.searchContainer2 {
+  width: auto;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.searchContainer2 > button {
+  justify-self: center;
+}
+
+.searchTagsContainer {
+  font-family: "Chaparral Pro";
+
+  display: flex;
+  flex-direction: column;
+  background-color: burlywood;
+}
+
+.tagSearch {
+  width: 150px;
+  background-color: burlywood;
+  border-radius: 25px;
+  margin-left: 8%;
+  padding-left: 8px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.containAll {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  width: 38%;
+  margin: 5px;
+  border-radius: 25px;
+  /* background-image: url(/images/scroll2.png); */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  background-color: rgb(222, 184, 135);
+}
+
+.containAll.login {
+  width: fit-content;
+  padding: 8px 8px;
+  margin: 220px 0;
+  background-image: url(/images/scroll2.png);
+  background-size: cover;
+  display: flex;
+}
+
+a.registerText {
+  text-decoration: underline;
+  margin-left: 5px;
+}
+
+div.register-button {
+  display: flex;
+  justify-content: center;
+}
+
+button.register-button {
+  margin: 8px 0;
+}
+
+.containAll.searchResult {
+  margin-top: 75px;
+  padding: 5px 5px;
+}
+
+.opening {
+  margin: 10px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.greeting {
+  margin: 10px;
+  font-size: 20pt;
+}
+
+.titleContainer {
+  margin-left: 8%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+h2.title {
+  font-weight: 550;
+  font-family: fantasy;
+  font-size: 30pt;
+  font-weight: 550;
+  align-self: center;
+  color: black;
+}
+
+h2.theme {
+  margin-bottom: 10px;
+}
+
+.containAll.welcome {
+  margin: 60px 0;
+}
+
+.userNameContainer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.usernameText {
+  font-style: italic;
+  margin-right: 20px;
+}
+
+.tagsContainer {
+  margin: 5px;
+  width: auto;
+  margin-left: 15px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.tags {
+  color: rgba(0, 0, 0, 0.767);
+  background-color: rgb(233, 224, 206);
+  border-radius: 6px;
+  width: auto;
+  padding: 3px 5px 3px 5px;
+  font-family: "Chaparral Pro";
+}
+
+.tags:hover {
+  background: linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
+  background-color: #80b5ea;
+}
+
+.questionsContainer {
+  margin-top: 15px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+}
+.home-questions {
+  margin: 5px;
+  margin-bottom: 20px;
+  font-size: 16pt;
+  font-family: "Chaparral Pro";
+  color: black;
+}
+
+.userName {
+  margin: 5px;
+  display: flex;
+  font-family: "Chaparral Pro";
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.viewProfile {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.openingLogOut {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+  width: fit-content;
+}
+
+.openingLogOut > * {
+  margin: 0 8px;
+}
+
+.tagLabel {
+  margin-top: 5.5px;
+  padding-left: 5px;
+}
+
+button {
+  background-color: rgb(233, 224, 206);
+  /* box-shadow:inset 0px 1px 0px 0px #ffffff; */
+  border-radius: 6px;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  color: black;
+  font-size: 13px;
+  /* font-weight:bold; */
+  margin: 2px;
+  padding: 3px 5px 3px 5px;
+  text-decoration: none;
+  /* text-shadow:0px 1px 0px #ffffff; */
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
+  background-color: #80b5ea;
+}
+
+button:active {
+  position: relative;
+  top: 1px;
+}
+
+.tag {
+  margin-right: 2px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 14pt;
+}
+label.tagLabel {
+  font-weight: 100;
+}
+
+/* Login Page */
+
+fieldset {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  width: 32%;
+  border-radius: 25px;
+  border: 3px solid black;
+}
+
+fieldset.newQuestion {
+  margin-top: 100px;
+  margin-bottom: 400px;
+}
+
+.email {
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 15pt;
+  margin: 6px;
+}
+
+.input,
+.password {
+  display: flex;
+  justify-content: center;
+  margin: 4px;
+}
+
+input {
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.registerText {
+  display: flex;
+  justify-self: flex-start;
+  color: black;
+  margin-bottom: 3px;
+}
+
+.login {
+  background-color: white;
+}
+
+#background-images {
+  display: flex;
+  justify-content: center;
+  border-radius: 25px;
+  position: absolute;
+  margin-left: 50px;
+  margin-right: 80%;
+  margin-top: 14%;
+  width: 150px;
+  padding: 0 5px;
+  height: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#background-images > div {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.profileButtons {
+  display: flex;
+  justify-content: center;
+}
+
+div.email,
+div.password {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.containProfile {
+  margin-top: 200px;
+  margin-bottom: 400px;
+  padding: 20px;
+  border-radius: 25px;
+  background-image: url(/images/scroll2.png);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  background-color: burlywood;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button.searchSubmit {
+  background-image: url(../images/search.png);
+  background-size: contain;
+  margin: 0;
+  margin-left: 3px;
+  padding: 0;
+  height: 22px;
+  width: 22px;
+}
+
+div.searchKeyword {
+  width: fit-content;
+}
+
+.searchDiv {
+  margin-top: 5px;
+  height: auto;
+  display: flex;
+}
+
+.searchDiv input {
+  border: none;
+  margin-bottom: 2%;
+}
+
+.footer {
+  /* position: fixed; */
+  background-color: burlywood;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0px;
+  /* position: absolute; */
+
+  margin-top: 330px;
+  padding: 0px;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-object--avi {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  align-items: center;
+}
+
+.about-links {
+  margin: 5px;
+  padding: 5px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+}
+
+a.fab {
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Answers Page */
+
+fieldset#answers {
+  padding: 10px 15px 10px 15px;
+  border: none;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+}
+
+.answersContainer {
+  /* max-width: 800px; */
+  /* background-color: blue; */
+}
+
+.answerContentContainer {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.answerContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 2%;
+  border: 2px solid none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  padding: 10px 3px 0 5px;
+  width: 80%;
+  height: 100px;
+  background-color: rgba(255, 248, 220, 0.502);
+}
+
+#answerField {
+  height: 110px;
+  width: 650px;
+  border: none;
+  justify-self: center;
+  margin-top: 2%;
+}
+
+.answerUsername {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 3px;
+  padding-top: 5px;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+}
+
+#postAnswer {
+  margin-top: 2%;
+}
+.askAQcontainer {
+  background-color: burlywood;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.AAQtextarea {
+  margin: 20px;
+  padding: 20px;
+  outline: none;
+  border-style: hidden;
+  border-radius: 20px;
+  max-height: 300px;
+  min-height: 130px;
+}
+.AAQselectTagDiv {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.AAQtaglabel {
+  margin-right: 50px;
+}
+.AAQsubmitnewQ {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+button.upvote-question-button-voted {
+  background: linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
+  background-color: #80b5ea;
+}
+
+div.commentContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 2%;
+  border: 2px solid none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  padding: 10px 3px 0 5px;
+  min-width: 400px;
+  min-height: 60px;
+  overflow-wrap: break-word;
+  background-color: rgba(255, 248, 220, 0.502);
+}
+
+.--hidden {
+  display: none !important;
+}
+
+div.username {
+  font-style: italic;
+  display: flex;
+  justify-content: flex-end;
+}
+
+div.answerUsername {
+  font-style: italic;
+}
+
+textarea {
+  padding: 5px 5px;
+}
+
+div.newAnswer {
+  display: flex;
+  justify-content: center;
+}
+
+fieldset#answers {
+  padding: 10px 15px 10px 15px;
+  border: none;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+/* .containAll.questions {
+  margin-top: 100px;
+  margin-bottom: 40px;
+} */
+
+.containAllAnswers {
+color: black;
+display: flex;
+flex-direction: column;
+width: 38%;
+margin: 100px 5px 40px 5px;
+border-radius: 25px;
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+background-color: rgb(222, 184, 135);
+}
+
+.searchResultsDiv {
+  margin-bottom: 330px;
+}

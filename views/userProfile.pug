@@ -1,0 +1,29 @@
+extends layout.pug
+
+append head
+    link(rel="stylesheet" href="/stylesheets/index.css")
+    script(src="/javascripts/index.js" type="module" defer)
+    script(src='/javascripts/questions.js' type='module' defer)
+
+block content
+
+
+    include utils.pug
+    div(class="containProfile")
+        //- table
+        //-     thead
+        //-         th User Name
+        //-         th User Email
+        //-     tbody
+        //-         tr
+        //-             td= user.username
+        //-             td= user.email
+        h2 User Name: 
+            td=user.username
+        h2 User Email: 
+            td=user.email
+        break
+        button(class="profileButtons")
+            a(href='/users/editPassword') Edit Password
+
+
